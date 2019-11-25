@@ -13,7 +13,14 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-
+   
+   %computeCost
+   %J = ((1/(2*m)) * sum(((X*theta)-y).^2))
+  
+   %computeCostMulti
+   theta_X = X*theta
+   
+   J = (1/(2*m)) * (theta_X - y)' * (theta_X - y) 
 
 
 
